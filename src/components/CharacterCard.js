@@ -1,10 +1,10 @@
 import '../assets/css/CharacterCard.css';
 
-const CharacterCard = () => {
+const CharacterCard = ({kana}) => {
     return (
         <div className="ui card">
             <div className="content">
-                <div className="character">あ</div>
+                <div className="character">{kana.jp}</div>
             </div>
             <div className="extra content">
                 <div className="ui huge transparent input">

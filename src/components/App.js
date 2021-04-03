@@ -1,9 +1,13 @@
 import React from 'react';
-import CharacterCard from './CharacterCard';
+import CardList from './CardList';
+import hiraganaData from '../assets/data/hiragana.json';
+import katakanaData from '../assets/data/katakana.json';
 
 const App = () => {
+    const hiragana = hiraganaData;
+    const katakana = katakanaData;
     return (
-        <div className="ui container"><CharacterCard /></div>
+        <div className="ui container" style={{ paddingTop: "50px" }}><CardList kanaList={hiragana} /></div>
     );
 }
 
