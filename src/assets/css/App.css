@@ -2,3 +2,17 @@
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+.ui.header {
+    padding-bottom: 20px;
+}
+
+h1.ui.header {
+    font-size: 3.2rem;
+}
+
+.ui.blue.button {
+    float: right;
+    width: 150px;
+    margin: 10px 5px 5px 5px;
+}
