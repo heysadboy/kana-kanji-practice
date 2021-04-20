@@ -5,10 +5,10 @@ const CharacterCard = ({ kana }) => {
     const [isCorrect, setIsCorrect] = useState(undefined)
 
     const checkKana = (e) => {
-        if (e.target.value === "") {
+        if (e.target.value.toLowerCase() === "") {
             setIsCorrect("");
         }
-        else if (e.target.value === kana.en) {
+        else if (e.target.value.toLowerCase() === kana.en) {
             setIsCorrect("green");
         }
         else {
