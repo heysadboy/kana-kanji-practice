@@ -2,22 +2,22 @@ import { useState } from 'react';
 import '../assets/css/CharacterCard.css';
 
 const CharacterCard = ({ kana }) => {
-    const [isCorrect, setIsCorrect] = useState(undefined)
+    const [isCorrect, setIsCorrect] = useState("")
 
     const checkKana = (e) => {
         if (e.target.value.toLowerCase() === "") {
             setIsCorrect("");
         }
         else if (e.target.value.toLowerCase() === kana.en) {
-            setIsCorrect("green");
+            setIsCorrect("green ");
         }
         else {
-            setIsCorrect("red");
+            setIsCorrect("red ");
         }
     };
 
     return (
-        <div className={`ui ${isCorrect} card`}>
+        <div className={`ui ${isCorrect}card`}>
             <div className="content">
                 <div className="character">{kana.jp}</div>
             </div>
